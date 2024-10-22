@@ -9,7 +9,7 @@ const color = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'violet']
 // make an array of sports
 const sport = ['football','basketball', 'tennis', 'table tennis', 'swimming', 'volleyball', 'netball', 'hockey', 'badminton']
 // make an array of foods
-
+const food = ['spaghetti', 'fish n chips', 'pizza', 'jollof rice', 'fried rice', 'noodles', 'lasagne', 'tacos', 'fried chicken', 'sushi']
 // loop through foods array, add if/else for most and least favourite
 
 // console 4 sentences that incorporate these items
