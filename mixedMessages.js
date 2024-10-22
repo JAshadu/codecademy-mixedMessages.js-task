@@ -10,10 +10,7 @@ const color = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'violet']
 const sport = ['football','basketball', 'tennis', 'table tennis', 'swimming', 'volleyball', 'netball', 'hockey', 'badminton']
 // make an array of foods
 const food = ['spaghetti', 'fish n chips', 'pizza', 'jollof rice', 'fried rice', 'noodles', 'lasagne', 'tacos', 'fried chicken', 'sushi']
-// loop through foods array, add if/else for most and least favourite
-
+// loop through food array, add if/else for least favourite
+const leastFav = (food)
 // console 4 sentences that incorporate these items
-/*console.log(`${greeting}! My name is ${name}.`)
-console.log(`My favourite color is ${color}`)
-console.log('According to '+ name +', the sport I am best at is ' + sport + '.')
-console.log(`My favourite food is ${food} and my least favourite food is ${food}.`)*/
+/*console.log(`${greeting}! My name is ${name}. My favourite color is ${color}. According to my partner ${name}, the sport I am best at is ${sport}. My favourite food is ${food} and my least favourite food is ${leastFav}.`)*/
