@@ -1,26 +1,29 @@
-const greeting = ['Hi', 'Bonjour', 'Hola', 'Guten Tag', 'Ciao', 'Namaste', 'Ni hao', 'Konnichi wa']
-let i = Math.floor(Math.random() * greeting.length)
-let theGreeting = greeting[i]
-const language = ['England', 'France', 'Spain', 'Germany', 'Italy', 'India', 'China', 'Japan']
-let theLanguage = language[i]
-const name = ['Amanda', 'Benny', 'Charlie', 'Dennis', 'Elijah', 'Finland', 'Gerald', 'Hassan', 'Ijenu', 'Jacob', 'Karl', 'Liam', 'Mary', 'Nana', 'Oscar', 'Piper', 'Quincy', 'Raymond', 'Steven', 'Tilly', 'Unice', 'Victor', 'Wapol', 'Xavier', 'Yewande', 'Zack']
-let a = Math.floor(Math.random() * name.length)
-let theName = name[a]
-let partner = () => {
-  if(name[a] !== theName) {
-    return name[a]
-  }
-}
-const color = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'violet']
-let theColor = color[Math.floor(Math.random() * color.length)]
-const sport = ['football','basketball', 'tennis', 'table tennis', 'swimming', 'volleyball', 'netball', 'hockey', 'badminton']
-let theSport = sport[Math.floor(Math.random() * sport.length)]
-const food = ['spaghetti', 'fish n chips', 'pizza', 'jollof rice', 'fried rice', 'noodles', 'lasagne', 'tacos', 'fried chicken', 'sushi']
-let j = Math.floor(Math.random() * food.length)
-let theFood = food[j]
-let leastFav = () => {
-  if(food[j] !== theFood) {
-    return food[j]
-    }
-}
+const greetings = ['Hi', 'Bonjour', 'Hola', 'Guten Tag', 'Ciao', 'Namaste', 'Ni hao', 'Konnichi wa']
+let a = Math.floor(Math.random() * greetings.length)
+let theGreeting = greetings[a]
+const languages = ['England', 'France', 'Spain', 'Germany', 'Italy', 'India', 'China', 'Japan']
+let theLanguage = languages[a]
+
+const names = ['Amanda', 'Benny', 'Charlie', 'Dennis', 'Elijah', 'Finland', 'Gerald', 'Hassan', 'Ijenu', 'Jacob', 'Karl', 'Liam', 'Mary', 'Nana', 'Oscar', 'Piper', 'Quincy', 'Raymond', 'Steven', 'Tilly', 'Unice', 'Victor', 'Wapol', 'Xavier', 'Yewande', 'Zack']
+let b = Math.floor(Math.random() * names.length)
+let theName = names[b]
+let pNames = names.splice(b, 1)
+console.log(pNames)
+let c = Math.floor(Math.random() * pNames.length)
+let partner = pNames[c]
+
+const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'purple', 'violet']
+let theColor = colors[Math.floor(Math.random() * colors.length)]
+
+const sports = ['football','basketball', 'tennis', 'table tennis', 'swimming', 'volleyball', 'netball', 'hockey', 'badminton']
+let theSport = sports[Math.floor(Math.random() * sports.length)]
+
+const foods = ['spaghetti', 'fish n chips', 'pizza', 'jollof rice', 'fried rice', 'noodles', 'lasagne', 'tacos', 'fried chicken', 'sushi']
+let d = Math.floor(Math.random() * foods.length)
+let theFood = foods[d]
+let dFoods = foods.splice(d, 1)
+console.log(dFoods)
+let e = Math.floor(Math.random() * dFoods.length)
+let leastFav = dFoods[e]
+
 console.log(`${theGreeting}! My name is ${theName} and I was born in ${theLanguage}. My favourite color is ${theColor}. According to my partner ${partner}, the sport I am best at is ${theSport}. My favourite food is ${theFood} and my least favourite food is ${leastFav}.`)
