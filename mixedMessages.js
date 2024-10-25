@@ -7,8 +7,8 @@ let theLanguage = languages[a]
 const names = ['Amanda', 'Benny', 'Charlie', 'Dennis', 'Elijah', 'Finland', 'Gerald', 'Hassan', 'Ijenu', 'Jacob', 'Karl', 'Liam', 'Mary', 'Nana', 'Oscar', 'Piper', 'Quincy', 'Raymond', 'Steven', 'Tilly', 'Unice', 'Victor', 'Wapol', 'Xavier', 'Yewande', 'Zack']
 let b = Math.floor(Math.random() * names.length)
 let theName = names[b]
-let pNames = names.splice(b, 1)
-console.log(pNames)
+let pNames = names.toSpliced(b, 1)
+//console.log(pNames)
 let c = Math.floor(Math.random() * pNames.length)
 let partner = pNames[c]
 
@@ -21,8 +21,8 @@ let theSport = sports[Math.floor(Math.random() * sports.length)]
 const foods = ['spaghetti', 'fish n chips', 'pizza', 'jollof rice', 'fried rice', 'noodles', 'lasagne', 'tacos', 'fried chicken', 'sushi']
 let d = Math.floor(Math.random() * foods.length)
 let theFood = foods[d]
-let dFoods = foods.splice(d, 1)
-console.log(dFoods)
+let dFoods = foods.toSpliced(d, 1)
+//console.log(dFoods)
 let e = Math.floor(Math.random() * dFoods.length)
 let leastFav = dFoods[e]
 
